@@ -20,6 +20,8 @@ import {
 } from "@components/layout";
 import { PostList, PostCreate, PostEdit, PostShow } from "@components/posts";
 
+import { UserList } from "../src/components/users/UserList";
+
 const API_URL = "https://api.fake-rest.refine.dev";
 
 function MyApp({ Component, pageProps }: AppProps): JSX.Element {
@@ -43,6 +45,10 @@ function MyApp({ Component, pageProps }: AppProps): JSX.Element {
           create: PostCreate,
           edit: PostEdit,
           show: PostShow,
+        },
+        {
+          name: "UserList",
+          list: UserList,
         },
       ]}
     >
