@@ -7,6 +7,7 @@ const { Title, Text } = Typography;
 
 export const PostShow: React.FC<IResourceComponentsProps> = () => {
   const { queryResult } = useShow<IPost>();
+  console.log(queryResult)
   const { data, isLoading } = queryResult;
   const record = data?.data;
 

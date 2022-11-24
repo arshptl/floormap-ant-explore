@@ -1,0 +1,185 @@
+{
+  "posts": [
+    {
+      "id": 1,
+      "title": "Aut sit quia quia est eos.",
+      "slug": "ullam-id-est",
+      "content": "Corrupti rerum ut ut. Vero asperiores dolore vitae est qui sequi vel qui aspernatur. Ipsam molestiae sunt reiciendis quia velit pariatur laborum tenetur. Praesentium praesentium aut aut. Sed quo delectus et. Accusamus minima neque esse quo et est. Perferendis quos dolores et. Modi aut sequi sed ut ut et ut fugit. Et in similique aliquam veritatis. Ipsam qui voluptatem sint non.",
+      "hit": 130638,
+      "category": {
+        "id": 33
+      },
+      "user": {
+        "id": 21
+      },
+      "status": "rejected",
+      "status_color": "red",
+      "createdAt": "2021-04-23T14:30:07.441Z",
+      "publishedAt": "2021-10-08T23:45:38.605Z",
+      "image": [
+        {
+          "url": "http://loremflickr.com/640/480/abstract",
+          "name": "e404953f-a2f8-4d46-ad71-6c5ebd4ddc9a",
+          "status": "done",
+          "type": "image/jpeg",
+          "uid": "721987e0-9424-46a6-9adc-85f4daedf8f4"
+        }
+      ],
+      "tags": [3, 7],
+      "language": 1
+    },
+    {
+      "id": 2,
+      "title": "Vel asperiores voluptatem voluptatum architecto excepturi dolore dolores mollitia.",
+      "slug": "quaerat-nostrum-autem",
+      "content": "In excepturi sint ut. Beatae quis et dolorem velit modi sit autem cum. Non quisquam esse pariatur ipsa rerum magnam dolore a. A quasi assumenda optio necessitatibus eius numquam. Quidem est voluptas doloribus at quisquam. Earum nobis impedit omnis dicta temporibus. Quam placeat nemo fugit eligendi quia voluptatibus nihil dolorem. Quis quaerat quisquam placeat voluptatem cum. Qui qui rerum non maiores. Harum sunt autem ut qui perspiciatis fuga voluptatem quas.",
+      "hit": 453650,
+      "category": {
+        "id": 15
+      },
+      "user": {
+        "id": 38
+      },
+      "status": "published",
+      "status_color": "lime",
+      "createdAt": "2022-11-11T18:56:28.814Z",
+      "publishedAt": "2022-04-05T19:25:30.424Z",
+      "image": [
+        {
+          "url": "http://loremflickr.com/640/480/abstract",
+          "name": "be2796d3-3084-4a18-9018-5a0e080e3cb7",
+          "status": "done",
+          "type": "image/jpeg",
+          "uid": "a1720fcf-dadf-4eb7-b6a2-0f4051fd63c5"
+        }
+      ],
+      "tags": [5, 7],
+      "language": 3
+    }
+  ],
+  "userone": [
+    {
+      "id": 1,
+      "firstName": "Luciano"
+    }
+  ],
+
+  "occupyseat": [
+    {
+      "id": 1,
+      "floor": 4,
+      "name": "React",
+      "photo": "https://i.picsum.photos/id/688/200/200.jpg?hmac=SPM6DXITCd9R3P5BMqgFMw6QdW-SJ2mPKUvq2g9eF-g",
+      "coordinates": [
+          {
+            "seatid": 1,
+            "name": "",
+            "cords": [],
+            "empid": "",
+            "occupied": false
+          },
+          {
+            "seatid": 2,
+            "name": "",
+            "cords": [],
+            "empid": "",
+            "occupied": false
+          },
+          {
+            "seatid": 3,
+            "name": "",
+            "cords": [],
+            "empid": "",
+            "occupied": false
+          }
+      ]
+    },
+    {
+      "id": 2,
+      "floor": 5,
+      "name": "Node",
+      "photo": "https://i.picsum.photos/id/688/200/200.jpg?hmac=SPM6DXITCd9R3P5BMqgFMw6QdW-SJ2mPKUvq2g9eF-g",
+      "coordinates": [
+        {
+          "seatid": 1,
+          "name": "",
+          "cords": [],
+          "empid": "",
+          "occupied": false
+        },
+        {
+          "seatid": 2,
+          "name": "",
+          "cords": [],
+          "empid": "",
+          "occupied": false
+        },
+        {
+          "seatid": 3,
+          "name": "",
+          "cords": [],
+          "empid": "",
+          "occupied": false
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "floor": 5,
+      "name": "Mobile",
+      "photo": "https://i.picsum.photos/id/688/200/200.jpg?hmac=SPM6DXITCd9R3P5BMqgFMw6QdW-SJ2mPKUvq2g9eF-g",
+      "coordinates": [
+        {
+          "seatid": 1,
+          "name": "",
+          "cords": [],
+          "empid": "",
+          "occupied": false
+        },
+        {
+          "seatid": 2,
+          "name": "",
+          "cords": [],
+          "empid": "",
+          "occupied": false
+        },
+        {
+          "seatid": 3,
+          "name": "",
+          "cords": [],
+          "empid": "",
+          "occupied": false
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "floor": 4,
+      "name": "React",
+      "photo": "https://i.picsum.photos/id/688/200/200.jpg?hmac=SPM6DXITCd9R3P5BMqgFMw6QdW-SJ2mPKUvq2g9eF-g",
+      "coordinates": [
+        {
+          "seatid": 1,
+          "name": "",
+          "cords": [],
+          "empid": "",
+          "occupied": false
+        },
+        {
+          "seatid": 2,
+          "name": "",
+          "cords": [],
+          "empid": "",
+          "occupied": false
+        },
+        {
+          "seatid": 3,
+          "name": "",
+          "cords": [],
+          "empid": "",
+          "occupied": false
+        }
+      ]
+    }
+  ]
+}

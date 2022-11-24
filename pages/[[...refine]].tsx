@@ -5,17 +5,26 @@ import {
 } from "@pankod/refine-nextjs-router";
 
 import dataProvider from "@pankod/refine-simple-rest";
-const API_URL = "https://api.fake-rest.refine.dev";
+// const API_URL = "https://api.fake-rest.refine.dev";
+const API_URL = "http://localhost:4000";
+
 
 export const getServerSideProps: GetServerSideProps = async (context) => {
   const { resource, action, id } = handleRefineParams(context.params?.refine);
-
+  // console.log(resource, action, id);
+  // console.log(resource.slice(resource.lastIndexOf("/") + 1));
+  // console.log(resource.lastIndexOf("/"));
+  
+  
   try {
     if (resource && action === "show" && id) {
       const data = await dataProvider(API_URL).getOne({
         resource: resource.slice(resource.lastIndexOf("/") + 1),
         id,
       });
+
+      console.log("data if action", data);
+
 
       return {
         props: {
@@ -27,6 +36,7 @@ export const getServerSideProps: GetServerSideProps = async (context) => {
         resource: resource.slice(resource.lastIndexOf("/") + 1),
       });
 
+      console.log("data if !action", data);
       return {
         props: {
           initialData: data,

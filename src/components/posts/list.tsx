@@ -23,7 +23,8 @@ import { IPost, ICategory } from "src/interfaces";
 
 export const PostList: React.FC<
   IResourceComponentsProps<GetListResponse<IPost>>
-> = ({ initialData }) => {
+  > = ({ initialData }) => {
+    console.log("initial data", initialData);
   const { tableProps, sorter } = useTable<IPost>({
     queryOptions: {
       initialData,
@@ -110,7 +111,9 @@ export const PostList: React.FC<
           title="Actions"
           dataIndex="actions"
           render={(_, record) => (
+            
             <Space>
+              {/* <div>{record.id}</div> */}
               <EditButton hideText size="small" recordItemId={record.id} />
               <ShowButton hideText size="small" recordItemId={record.id} />
               <DeleteButton hideText size="small" recordItemId={record.id} />
