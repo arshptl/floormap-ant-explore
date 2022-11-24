@@ -68,8 +68,9 @@
     {
       "id": 1,
       "floor": 4,
-      "name": "React",
-      "photo": "https://i.picsum.photos/id/688/200/200.jpg?hmac=SPM6DXITCd9R3P5BMqgFMw6QdW-SJ2mPKUvq2g9eF-g",
+      "name": "IT Department",
+      "depid": "it",
+      "photo": "https://images.unsplash.com/2/02.jpg?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80",
       "coordinates": [
           {
             "seatid": 1,
@@ -97,8 +98,9 @@
     {
       "id": 2,
       "floor": 5,
+      "depid": "node",
       "name": "Node",
-      "photo": "https://i.picsum.photos/id/688/200/200.jpg?hmac=SPM6DXITCd9R3P5BMqgFMw6QdW-SJ2mPKUvq2g9eF-g",
+      "photo": "https://images.unsplash.com/2/10.jpg?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80",
       "coordinates": [
         {
           "seatid": 1,
@@ -126,8 +128,9 @@
     {
       "id": 3,
       "floor": 5,
+      "depid": "mobile",
       "name": "Mobile",
-      "photo": "https://i.picsum.photos/id/688/200/200.jpg?hmac=SPM6DXITCd9R3P5BMqgFMw6QdW-SJ2mPKUvq2g9eF-g",
+      "photo": "https://images.unsplash.com/photo-1516655855035-d5215bcb5604?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1yZWxhdGVkfDR8fHxlbnwwfHx8fA%3D%3D&auto=format&fit=crop&w=500&q=60",
       "coordinates": [
         {
           "seatid": 1,
@@ -154,9 +157,10 @@
     },
     {
       "id": 4,
-      "floor": 4,
-      "name": "React",
-      "photo": "https://i.picsum.photos/id/688/200/200.jpg?hmac=SPM6DXITCd9R3P5BMqgFMw6QdW-SJ2mPKUvq2g9eF-g",
+      "floor": 6,
+      "depid": "java",
+      "name": "Java",
+      "photo": "https://images.unsplash.com/photo-1437143618958-b630ca68622f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1332&q=80",
       "coordinates": [
         {
           "seatid": 1,

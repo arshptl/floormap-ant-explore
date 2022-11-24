@@ -10,4 +10,7 @@ module.exports = withPlugins([[pluginAntdLess]], {
     return config;
   },
   webpack5: true,
+  images: {
+    domains: ["images.unsplash.com"],
+  },
 });
