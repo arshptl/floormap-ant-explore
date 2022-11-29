@@ -11,6 +11,6 @@ module.exports = withPlugins([[pluginAntdLess]], {
   },
   webpack5: true,
   images: {
-    domains: ["images.unsplash.com"],
+    domains: ["images.unsplash.com", "images.edrawmax.com"],
   },
 });

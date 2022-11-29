@@ -180,10 +180,9 @@ export const OccupySeat: React.FC<
       >
         {console.log(currentCabin)}
         {currentCabin && (
-          <ImageMapper
+          <ImageMapper   
             src={currentCabin?.photo ? currentCabin?.photo : placeholder}
-            width={700}
-            height={500}
+            width={500}
             map={currentCabin}
             onClick={area => clicked(area)}
           />
