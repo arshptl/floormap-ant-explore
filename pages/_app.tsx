@@ -20,12 +20,14 @@ import {
 } from "@components/layout";
 import { PostList, PostCreate, PostEdit, PostShow } from "@components/posts";
 
+
+
 // import UserShow  from "../src/components/users/show";
 import {UserShow, UserList} from "@components/users";
-import { OccupySeat } from "@components/occupyseat";
+import { OccupySeat,CreateSeat } from "@components/occupyseat";
 
 // const API_URL = "https://api.fake-rest.refine.dev";
-const API_URL = "http://localhost:4000";
+const API_URL = "http://localhost:3000";
 
 
 function MyApp({ Component, pageProps }: AppProps): JSX.Element {
@@ -58,6 +60,7 @@ function MyApp({ Component, pageProps }: AppProps): JSX.Element {
         {
           name: "occupyseat",
           list: OccupySeat,
+          create: CreateSeat,
         },
       ]}
     >

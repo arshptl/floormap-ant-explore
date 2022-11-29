@@ -5,6 +5,8 @@ import type { SelectProps } from "antd";
 import { useState, useEffect } from "react";
 import Image from "next/image";
 import placeholder from "../../../assets/placeholder.jpg";
+import ImageMapper from "react-image-mapper";
+
 const { Title, Text } = Typography;
 
 const floorWithCabinMap = [
@@ -88,6 +90,8 @@ export const OccupySeat: React.FC<
 
   const [cabins, setCabinOption] = useState(cabinOptions);
   const [userSelect, setUserSelect] = useState({ floor: "", cabin: "" });
+  const [msg, setMsg] = useState("somthing");
+
   const [currentCabin, setCurrentCabin] = useState<Icabins>();
   const handleChange = (value: string) => {
     console.log(`Selected: ${value}`);
@@ -116,6 +120,11 @@ export const OccupySeat: React.FC<
     console.log(localCabinArray);
   };
 
+  const clicked = (value:any) =>{
+    console.log(value.userName,"selected crew")
+    setMsg(value.userName);
+  }
+
   const handleCabinChange = (value: string) => {
     console.log(`Selected Cabin: ${value}`);
     setUserSelect((existingValues) => ({
@@ -127,6 +136,7 @@ export const OccupySeat: React.FC<
     const selectedCabin = cabinData?.find((c) => c.depid === value);
     setCurrentCabin(selectedCabin);
     console.log(selectedCabin);
+    setMsg("somthing");
   };
 
   return (
@@ -168,14 +178,18 @@ export const OccupySeat: React.FC<
           margin: "24px 0",
         }}
       >
+        {console.log(currentCabin)}
         {currentCabin && (
-          <Image
+          <ImageMapper
             src={currentCabin?.photo ? currentCabin?.photo : placeholder}
             width={700}
             height={500}
+            map={currentCabin}
+            onClick={area => clicked(area)}
           />
         )}
       </div>
+      {msg}
     </div>
   );
 };
@@ -186,12 +200,16 @@ interface Icabins {
   name: string;
   depid: string;
   photo: string;
-  coordinates: [
-    seatid: string,
-    name: string,
-    cords: [],
-    empid: string,
-    occupied: boolean
+  areas: [
+    {
+      name: number;
+      shape: string;
+      coords: [];
+      preFillColor: string;
+      fillColor: string;
+      userName:string;
+      emp_id:number;
+    }
   ];
 }
 

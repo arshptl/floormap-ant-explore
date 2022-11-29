@@ -71,28 +71,26 @@
       "name": "IT Department",
       "depid": "it",
       "photo": "https://images.unsplash.com/2/02.jpg?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80",
-      "coordinates": [
-          {
-            "seatid": 1,
-            "name": "",
-            "cords": [],
-            "empid": "",
-            "occupied": false
-          },
-          {
-            "seatid": 2,
-            "name": "",
-            "cords": [],
-            "empid": "",
-            "occupied": false
-          },
-          {
-            "seatid": 3,
-            "name": "",
-            "cords": [],
-            "empid": "",
-            "occupied": false
-          }
+      "areas": [
+        {
+          "name": "1",
+          "shape": "poly",
+          "coords": [219,118,220,210,283,210,284,119],
+          "preFillColor": "red",
+          "fillColor": "blue",
+          "userName":"sagar khatri",
+          "emp_id":"2190"
+        },
+        {
+          "name": "2",
+          "shape": "poly",
+          "coords": [381,241,383,94,462,53,457,282],
+          "preFillColor": "lightGreen",
+          "fillColor": "green",
+          "userName":"akash chauhan",
+          "emp_id":"2186"
+        }
+        
       ]
     },
     {
@@ -101,27 +99,24 @@
       "depid": "node",
       "name": "Node",
       "photo": "https://images.unsplash.com/2/10.jpg?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80",
-      "coordinates": [
+      "areas": [
         {
-          "seatid": 1,
-          "name": "",
-          "cords": [],
-          "empid": "",
-          "occupied": false
+          "name": "1",
+          "shape": "poly",
+          "coords": [219,118,220,210,283,210,284,119],
+          "preFillColor": "red",
+          "fillColor": "blue",
+          "userName":"hemil rajpura",
+          "emp_id":"2186"
         },
         {
-          "seatid": 2,
-          "name": "",
-          "cords": [],
-          "empid": "",
-          "occupied": false
-        },
-        {
-          "seatid": 3,
-          "name": "",
-          "cords": [],
-          "empid": "",
-          "occupied": false
+          "name": "2",
+          "shape": "poly",
+          "coords": [381,241,383,94,462,53,457,282],
+          "preFillColor": "lightGreen",
+          "fillColor": "green",
+          "userName":"akash chauhan",
+          "emp_id":"2186"
         }
       ]
     },
@@ -131,27 +126,15 @@
       "depid": "mobile",
       "name": "Mobile",
       "photo": "https://images.unsplash.com/photo-1516655855035-d5215bcb5604?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1yZWxhdGVkfDR8fHxlbnwwfHx8fA%3D%3D&auto=format&fit=crop&w=500&q=60",
-      "coordinates": [
+      "areas": [
         {
-          "seatid": 1,
-          "name": "",
-          "cords": [],
-          "empid": "",
-          "occupied": false
-        },
-        {
-          "seatid": 2,
-          "name": "",
-          "cords": [],
-          "empid": "",
-          "occupied": false
-        },
-        {
-          "seatid": 3,
-          "name": "",
-          "cords": [],
-          "empid": "",
-          "occupied": false
+          "name": "1",
+          "shape": "poly",
+          "coords": [219,118,220,210,283,210,284,119],
+          "preFillColor": "red",
+          "fillColor": "blue",
+          "userName":"Smit t",
+          "emp_id":"2121"
         }
       ]
     },
@@ -161,27 +144,15 @@
       "depid": "java",
       "name": "Java",
       "photo": "https://images.unsplash.com/photo-1437143618958-b630ca68622f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1332&q=80",
-      "coordinates": [
+      "areas": [
         {
-          "seatid": 1,
-          "name": "",
-          "cords": [],
-          "empid": "",
-          "occupied": false
-        },
-        {
-          "seatid": 2,
-          "name": "",
-          "cords": [],
-          "empid": "",
-          "occupied": false
-        },
-        {
-          "seatid": 3,
-          "name": "",
-          "cords": [],
-          "empid": "",
-          "occupied": false
+          "name": "1",
+          "shape": "poly",
+          "coords": [219,118,220,210,283,210,284,119],
+          "preFillColor": "red",
+          "fillColor": "blue",
+          "userName":"harsh p",
+          "emp_id":"2198"
         }
       ]
     }
