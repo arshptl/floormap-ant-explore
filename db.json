@@ -1,60 +1,60 @@
 {
   "posts": [
     {
-      "id": 1,
-      "title": "Aut sit quia quia est eos.",
-      "slug": "ullam-id-est",
-      "content": "Corrupti rerum ut ut. Vero asperiores dolore vitae est qui sequi vel qui aspernatur. Ipsam molestiae sunt reiciendis quia velit pariatur laborum tenetur. Praesentium praesentium aut aut. Sed quo delectus et. Accusamus minima neque esse quo et est. Perferendis quos dolores et. Modi aut sequi sed ut ut et ut fugit. Et in similique aliquam veritatis. Ipsam qui voluptatem sint non.",
-      "hit": 130638,
+      "id": 2,
+      "title": "Delectus accusantium est aspernatur inventore enim distinctio reiciendis qui quia.",
+      "slug": "sit-omnis-provident",
+      "content": "Soluta vero dolorum et eum quia. Provident qui ut inventore. Eius hic aut voluptatem alias reprehenderit perspiciatis neque. Expedita rerum voluptas magnam consequuntur sit minima sunt et. Cupiditate sed cumque voluptas nam ullam error nesciunt. Numquam quo odit est consequuntur molestias quas numquam quis ea. Est fugiat rerum nobis reprehenderit. Totam ea assumenda. Repellat consequatur vitae aut sed error. Placeat facere natus rerum.",
+      "hit": 184281,
+      "category": {
+        "id": 2
+      },
+      "user": {
+        "id": 27
+      },
+      "status": "draft",
+      "status_color": "orange",
+      "createdAt": "2021-03-29T08:49:42.715Z",
+      "publishedAt": "2022-01-03T11:50:46.639Z",
+      "image": [
+        {
+          "url": "http://loremflickr.com/640/480/abstract",
+          "name": "4974f551-8a9a-4750-83da-489b3f22007a",
+          "status": "done",
+          "type": "image/jpeg",
+          "uid": "dd9ecd0a-5a96-4e16-b047-43dca8f43556"
+        }
+      ],
+      "tags": [8, 2],
+      "language": 1
+    },
+    {
+      "id": 3,
+      "title": "Accusamus voluptatibus et quae dolores.",
+      "slug": "voluptas-debitis-dolor",
+      "content": "Rerum eligendi eveniet distinctio neque officiis. Non sit sed nihil quas tempora tempora molestias molestias dolorem. Eos nemo sint hic eum sed quia debitis repellendus dolores. Laudantium voluptas nostrum ea. Quam repudiandae ratione vel distinctio laudantium sint nihil. Atque voluptas cum ea et. Est unde explicabo maxime maxime. Laudantium quaerat et. Aut architecto voluptas. Totam voluptatibus facilis amet molestias sint recusandae sunt.",
+      "hit": 106728,
       "category": {
         "id": 33
       },
       "user": {
-        "id": 21
-      },
-      "status": "rejected",
-      "status_color": "red",
-      "createdAt": "2021-04-23T14:30:07.441Z",
-      "publishedAt": "2021-10-08T23:45:38.605Z",
-      "image": [
-        {
-          "url": "http://loremflickr.com/640/480/abstract",
-          "name": "e404953f-a2f8-4d46-ad71-6c5ebd4ddc9a",
-          "status": "done",
-          "type": "image/jpeg",
-          "uid": "721987e0-9424-46a6-9adc-85f4daedf8f4"
-        }
-      ],
-      "tags": [3, 7],
-      "language": 1
-    },
-    {
-      "id": 2,
-      "title": "Vel asperiores voluptatem voluptatum architecto excepturi dolore dolores mollitia.",
-      "slug": "quaerat-nostrum-autem",
-      "content": "In excepturi sint ut. Beatae quis et dolorem velit modi sit autem cum. Non quisquam esse pariatur ipsa rerum magnam dolore a. A quasi assumenda optio necessitatibus eius numquam. Quidem est voluptas doloribus at quisquam. Earum nobis impedit omnis dicta temporibus. Quam placeat nemo fugit eligendi quia voluptatibus nihil dolorem. Quis quaerat quisquam placeat voluptatem cum. Qui qui rerum non maiores. Harum sunt autem ut qui perspiciatis fuga voluptatem quas.",
-      "hit": 453650,
-      "category": {
-        "id": 15
-      },
-      "user": {
-        "id": 38
+        "id": 19
       },
       "status": "published",
       "status_color": "lime",
-      "createdAt": "2022-11-11T18:56:28.814Z",
-      "publishedAt": "2022-04-05T19:25:30.424Z",
+      "createdAt": "2021-09-08T08:15:24.426Z",
+      "publishedAt": "2021-06-22T11:05:06.103Z",
       "image": [
         {
           "url": "http://loremflickr.com/640/480/abstract",
-          "name": "be2796d3-3084-4a18-9018-5a0e080e3cb7",
+          "name": "14373b60-eaba-4318-ba95-1ced9b5a7801",
           "status": "done",
           "type": "image/jpeg",
-          "uid": "a1720fcf-dadf-4eb7-b6a2-0f4051fd63c5"
+          "uid": "40d3fa60-ccf1-4653-9d8c-aaf0e47bf923"
         }
       ],
-      "tags": [5, 7],
-      "language": 3
+      "tags": [1, 8],
+      "language": 1
     }
   ],
   "userone": [
@@ -73,7 +73,7 @@
       "photo": "https://images.unsplash.com/2/02.jpg?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80",
       "areas": [
         {
-          "occupied": true,
+          "occupied": false,
           "name": "1",
           "shape": "poly",
           "coords": [219, 118, 220, 210, 283, 210, 284, 119],
