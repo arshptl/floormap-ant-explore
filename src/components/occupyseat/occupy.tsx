@@ -1,74 +1,15 @@
 import React from "react";
 import { IResourceComponentsProps, GetListResponse } from "@pankod/refine-core";
 import { Typography, Select } from "@pankod/refine-antd";
-import type { SelectProps } from "antd";
-import { useState, useEffect } from "react";
-import Image from "next/image";
+import { useState } from "react";
 import placeholder from "../../../assets/placeholder.jpg";
 import ImageMapper from "react-image-mapper";
-
-const { Title, Text } = Typography;
-
-const floorWithCabinMap = [
-  {
-    floor: "4",
-    cabins: [
-      {
-        label: "IT",
-        value: "it",
-      },
-    ],
-  },
-  {
-    floor: "5",
-    cabins: [
-      {
-        label: "React",
-        value: "react",
-      },
-      {
-        label: "Mobile",
-        value: "mobile",
-      },
-      {
-        label: "Node",
-        value: "node",
-      },
-    ],
-  },
-  {
-    floor: "6",
-    cabins: [
-      {
-        label: "Java",
-        value: "java",
-      },
-      {
-        label: "Sales",
-        value: "sales",
-      },
-    ],
-  },
-];
-
-const floorOptions: SelectProps["options"] = [
-  {
-    value: "0",
-    label: "All",
-  },
-  {
-    value: "4",
-    label: "4",
-  },
-  {
-    value: "5",
-    label: "5",
-  },
-  {
-    value: "6",
-    label: "6",
-  },
-];
+import { Icabins, Cabintype, OccupiedSeatType } from "src/utils/interfaces";
+import { floorWithCabinMap, floorOptions } from '../../utils/static'
+import DisplayUser from './displayUser';
+import { Col, Divider, Row, Drawer } from 'antd';
+const { Title } = Typography;
+import refine from "../../../assets/refine.svg"
 
 export const OccupySeat: React.FC<
   IResourceComponentsProps<GetListResponse<Icabins>>
@@ -90,7 +31,28 @@ export const OccupySeat: React.FC<
 
   const [cabins, setCabinOption] = useState(cabinOptions);
   const [userSelect, setUserSelect] = useState({ floor: "", cabin: "" });
-  const [msg, setMsg] = useState("somthing");
+  const [seat, setSeat] = useState<OccupiedSeatType>(
+    {
+      "name": "",
+      "shape": "",
+      "coords": [],
+      "preFillColor": "",
+      "fillColor": "",
+      "userName": "",
+      "emp_id": "",
+      occupied: false,
+    }
+  );
+
+  const [open, setOpen] = useState(false);
+
+  const showDrawer = () => {
+    setOpen(true);
+  };
+
+  const onClose = () => {
+    setOpen(false);
+  };
 
   const [currentCabin, setCurrentCabin] = useState<Icabins>();
   const handleChange = (value: string) => {
@@ -120,9 +82,10 @@ export const OccupySeat: React.FC<
     console.log(localCabinArray);
   };
 
-  const clicked = (value:any) =>{
-    console.log(value.userName,"selected crew")
-    setMsg(value.userName);
+  const handleSeatClick = (value: OccupiedSeatType) => {
+    console.log(value, "selected crew")
+    showDrawer();
+    setSeat(value);
   }
 
   const handleCabinChange = (value: string) => {
@@ -136,7 +99,7 @@ export const OccupySeat: React.FC<
     const selectedCabin = cabinData?.find((c) => c.depid === value);
     setCurrentCabin(selectedCabin);
     console.log(selectedCabin);
-    setMsg("somthing");
+    // setSeat("somthing");
   };
 
   return (
@@ -173,46 +136,21 @@ export const OccupySeat: React.FC<
           onChange={handleCabinChange}
         />
       </div>
-      <div
-        style={{
-          margin: "24px 0",
-        }}
-      >
-        {console.log(currentCabin)}
-        {currentCabin && (
-          <ImageMapper   
+
+      <Drawer title="Seat Description" placement="right" onClose={onClose} visible={open}>
+        <DisplayUser {...seat} />
+      </Drawer>
+
+      {currentCabin && (
+        <div style={{ width: "100%", margin: "24px 0" }}>
+          <ImageMapper
             src={currentCabin?.photo ? currentCabin?.photo : placeholder}
-            width={500}
+            // width={500}
             map={currentCabin}
-            onClick={area => clicked(area)}
+            onClick={area => handleSeatClick(area)}
           />
-        )}
-      </div>
-      {msg}
+        </div>
+      )}
     </div>
   );
-};
-
-interface Icabins {
-  id: string;
-  floor: number;
-  name: string;
-  depid: string;
-  photo: string;
-  areas: [
-    {
-      name: number;
-      shape: string;
-      coords: [];
-      preFillColor: string;
-      fillColor: string;
-      userName:string;
-      emp_id:number;
-    }
-  ];
-}
-
-type Cabintype = {
-  label: string;
-  value: string;
 };

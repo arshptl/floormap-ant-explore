@@ -73,6 +73,7 @@
       "photo": "https://images.unsplash.com/2/02.jpg?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80",
       "areas": [
         {
+          "occupied": true,
           "name": "1",
           "shape": "poly",
           "coords": [219, 118, 220, 210, 283, 210, 284, 119],
@@ -82,6 +83,7 @@
           "emp_id": "2190"
         },
         {
+          "occupied": true,
           "name": "2",
           "shape": "poly",
           "coords": [381, 241, 383, 94, 462, 53, 457, 282],
@@ -100,6 +102,7 @@
       "photo": "https://images.unsplash.com/2/10.jpg?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80",
       "areas": [
         {
+          "occupied": true,
           "name": "1",
           "shape": "poly",
           "coords": [219, 118, 220, 210, 283, 210, 284, 119],
@@ -109,6 +112,7 @@
           "emp_id": "2186"
         },
         {
+          "occupied": true,
           "name": "2",
           "shape": "poly",
           "coords": [381, 241, 383, 94, 462, 53, 457, 282],
@@ -127,6 +131,7 @@
       "photo": "https://images.unsplash.com/photo-1516655855035-d5215bcb5604?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1yZWxhdGVkfDR8fHxlbnwwfHx8fA%3D%3D&auto=format&fit=crop&w=500&q=60",
       "areas": [
         {
+          "occupied": true,
           "name": "1",
           "shape": "poly",
           "coords": [219, 118, 220, 210, 283, 210, 284, 119],
@@ -145,6 +150,7 @@
       "photo": "https://images.unsplash.com/photo-1437143618958-b630ca68622f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1332&q=80",
       "areas": [
         {
+          "occupied": true,
           "name": "1",
           "shape": "poly",
           "coords": [219, 118, 220, 210, 283, 210, 284, 119],
@@ -163,6 +169,7 @@
       "photo": "https://images.edrawmax.com/examples/office-layout-examples/office-layout-example-3.jpg",
       "areas": [
         {
+          "occupied": true,
           "name": "1",
           "shape": "poly",
           "coords": [82, 323, 98, 323, 97, 337, 82, 338],
