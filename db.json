@@ -77,8 +77,7 @@
           "name": "1",
           "shape": "poly",
           "coords": [219, 118, 220, 210, 283, 210, 284, 119],
-          "preFillColor": "red",
-          "fillColor": "blue",
+          "preFillColor": "#D2D2D2",
           "userName": "sagar khatri",
           "emp_id": "2190"
         },
@@ -87,8 +86,7 @@
           "name": "2",
           "shape": "poly",
           "coords": [381, 241, 383, 94, 462, 53, 457, 282],
-          "preFillColor": "lightGreen",
-          "fillColor": "green",
+          "preFillColor": "#EF5366",
           "userName": "akash chauhan",
           "emp_id": "2186"
         }
@@ -106,8 +104,7 @@
           "name": "1",
           "shape": "poly",
           "coords": [219, 118, 220, 210, 283, 210, 284, 119],
-          "preFillColor": "red",
-          "fillColor": "blue",
+          "preFillColor": "#EF5366",
           "userName": "hemil rajpura",
           "emp_id": "2186"
         },
@@ -116,8 +113,7 @@
           "name": "2",
           "shape": "poly",
           "coords": [381, 241, 383, 94, 462, 53, 457, 282],
-          "preFillColor": "lightGreen",
-          "fillColor": "green",
+          "preFillColor": "#EF5366",
           "userName": "akash chauhan",
           "emp_id": "2186"
         }
@@ -135,8 +131,7 @@
           "name": "1",
           "shape": "poly",
           "coords": [219, 118, 220, 210, 283, 210, 284, 119],
-          "preFillColor": "red",
-          "fillColor": "blue",
+          "preFillColor": "#EF5366",
           "userName": "Smit t",
           "emp_id": "2121"
         }
@@ -154,8 +149,7 @@
           "name": "1",
           "shape": "poly",
           "coords": [219, 118, 220, 210, 283, 210, 284, 119],
-          "preFillColor": "red",
-          "fillColor": "blue",
+          "preFillColor": "#EF5366",
           "userName": "harsh p",
           "emp_id": "2198"
         }
@@ -173,8 +167,7 @@
           "name": "1",
           "shape": "poly",
           "coords": [82, 323, 98, 323, 97, 337, 82, 338],
-          "preFillColor": "red",
-          "fillColor": "blue",
+          "preFillColor": "#EF5366",
           "userName": "harsh p",
           "emp_id": "2198"
         }

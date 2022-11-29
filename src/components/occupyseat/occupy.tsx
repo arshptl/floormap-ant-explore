@@ -3,7 +3,7 @@ import { IResourceComponentsProps, GetListResponse } from "@pankod/refine-core";
 import { Typography, Select } from "@pankod/refine-antd";
 import { useState } from "react";
 import placeholder from "../../../assets/placeholder.jpg";
-import ImageMapper from "react-image-mapper";
+import ImageMapper from "react-img-mapper";
 import { Icabins, Cabintype, OccupiedSeatType } from "src/utils/interfaces";
 import { floorWithCabinMap, floorOptions } from '../../utils/static'
 import DisplayUser from './displayUser';
@@ -137,17 +137,25 @@ export const OccupySeat: React.FC<
         />
       </div>
 
-      <Drawer title="Seat Description" placement="right" onClose={onClose} visible={open}>
+      <Drawer
+        title="Seat Description"
+        placement="right"
+        onClose={onClose}
+        visible={open}
+      >
         <DisplayUser {...seat} />
       </Drawer>
 
       {currentCabin && (
         <div style={{ width: "100%", margin: "24px 0" }}>
           <ImageMapper
-            src={currentCabin?.photo ? currentCabin?.photo : placeholder}
+            fillColor="#f1364c"
+            src={currentCabin?.photo}
             // width={500}
+            natural
+            strokeColor="transparent"
             map={currentCabin}
-            onClick={area => handleSeatClick(area)}
+            onClick={(area) => handleSeatClick(area)}
           />
         </div>
       )}
