@@ -5,11 +5,12 @@ import { useState } from "react";
 import placeholder from "../../../assets/placeholder.jpg";
 import ImageMapper from "react-img-mapper";
 import { Icabins, Cabintype, OccupiedSeatType } from "src/utils/interfaces";
-import { floorWithCabinMap, floorOptions } from '../../utils/static'
-import DisplayUser from './displayUser';
-import { Col, Divider, Row, Drawer } from 'antd';
+import { floorWithCabinMap, floorOptions } from "../../utils/static";
+import DisplayUser from "./displayUser";
+import { Col, Divider, Row, Drawer } from "antd";
 const { Title } = Typography;
-import refine from "../../../assets/refine.svg"
+import refine from "../../../assets/refine.svg";
+import Image from "next/image";
 
 export const OccupySeat: React.FC<
   IResourceComponentsProps<GetListResponse<Icabins>>
@@ -31,18 +32,16 @@ export const OccupySeat: React.FC<
 
   const [cabins, setCabinOption] = useState(cabinOptions);
   const [userSelect, setUserSelect] = useState({ floor: "", cabin: "" });
-  const [seat, setSeat] = useState<OccupiedSeatType>(
-    {
-      "name": "",
-      "shape": "",
-      "coords": [],
-      "preFillColor": "",
-      "fillColor": "",
-      "userName": "",
-      "emp_id": "",
-      occupied: false,
-    }
-  );
+  const [seat, setSeat] = useState<OccupiedSeatType>({
+    name: "",
+    shape: "",
+    coords: [],
+    preFillColor: "",
+    fillColor: "",
+    userName: "",
+    emp_id: "",
+    occupied: false,
+  });
 
   const [open, setOpen] = useState(false);
 
@@ -83,10 +82,10 @@ export const OccupySeat: React.FC<
   };
 
   const handleSeatClick = (value: OccupiedSeatType) => {
-    console.log(value, "selected crew")
+    console.log(value, "selected crew");
     showDrawer();
     setSeat(value);
-  }
+  };
 
   const handleCabinChange = (value: string) => {
     console.log(`Selected Cabin: ${value}`);
@@ -145,7 +144,11 @@ export const OccupySeat: React.FC<
       >
         <DisplayUser {...seat} />
       </Drawer>
-
+      {!currentCabin && (
+        <div style={{ width: "100%", margin: "24px 0" }}>
+          <Image src={placeholder} />
+        </div>
+      )}
       {currentCabin && (
         <div style={{ width: "100%", margin: "24px 0" }}>
           <ImageMapper
