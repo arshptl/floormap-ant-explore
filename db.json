@@ -91,6 +91,7 @@
           "emp_id":"2186"
         }
         
+
       ]
     },
     {
@@ -155,6 +156,37 @@
           "emp_id":"2198"
         }
       ]
+    },
+    {
+      "id": 5,
+      "floor": 5,
+      "depid": "react",
+      "name": "React",
+      "photo": "https://images.unsplash.com/photo-1471958680802-1345a694ba6d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1566&q=80",
+      "coordinates": [
+        {
+          "seatid": 1,
+          "name": "",
+          "cords": [],
+          "empid": "",
+          "occupied": false
+        },
+        {
+          "seatid": 2,
+          "name": "",
+          "cords": [],
+          "empid": "",
+          "occupied": false
+        },
+        {
+          "seatid": 3,
+          "name": "",
+          "cords": [],
+          "empid": "",
+          "occupied": false
+        }
+      ]
     }
+    
   ]
 }
