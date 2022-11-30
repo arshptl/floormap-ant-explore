@@ -21,7 +21,7 @@ import {
 import { Title as DefaultTitle } from "../title";
 
 import { antLayoutSider, antLayoutSiderMobile } from "./styles";
-const { UnorderedListOutlined, LogoutOutlined } = Icons;
+const { UnorderedListOutlined, LogoutOutlined ,ArrowRightOutlined,DesktopOutlined} = Icons;
 const { SubMenu } = Menu;
 
 export const Sider: typeof DefaultSider = ({ render }) => {
@@ -66,6 +66,9 @@ export const Sider: typeof DefaultSider = ({ render }) => {
       }
       const isSelected = route === selectedKey;
       const isRoute = !(parentName !== undefined && children.length === 0);
+      console.log(selectedKey)
+
+     const icons= selectedKey==='/occupyseat'?<DesktopOutlined/>:<ArrowRightOutlined/>
       return (
         <CanAccess
           key={route}
@@ -80,7 +83,7 @@ export const Sider: typeof DefaultSider = ({ render }) => {
             style={{
               fontWeight: isSelected ? "bold" : "normal",
             }}
-            icon={icon ?? (isRoute && <UnorderedListOutlined />)}
+    icon={icons}  
           >
             <Link to={route}>{label}</Link>
             {!collapsed && isSelected && (
