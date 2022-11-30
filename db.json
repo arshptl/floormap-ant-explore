@@ -70,23 +70,23 @@
       "floor": 4,
       "name": "IT Department",
       "depid": "it",
-      "photo": "https://images.unsplash.com/2/02.jpg?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80",
+      "photo": "https://i.ibb.co/gm0MC2F/4th-floor-cabin-1-5.png",
       "areas": [
         {
-          "occupied": false,
+          "occupied": true,
           "name": "1",
           "shape": "poly",
-          "coords": [219, 118, 220, 210, 283, 210, 284, 119],
-          "preFillColor": "#D2D2D2",
+          "coords": [335,240,360,240,360,265,335,265],
+          "preFillColor": "#FFE7EA",
           "userName": "sagar khatri",
           "emp_id": "2190"
         },
         {
-          "occupied": true,
+          "occupied": false,
           "name": "2",
           "shape": "poly",
-          "coords": [381, 241, 383, 94, 462, 53, 457, 282],
-          "preFillColor": "#EF5366",
+          "coords": [335,285,360,285,360,310,335,310],
+          "preFillColor": "#FFE7EA",
           "userName": "akash chauhan",
           "emp_id": "2186"
         }

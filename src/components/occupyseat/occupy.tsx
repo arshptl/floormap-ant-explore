@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { IResourceComponentsProps, GetListResponse } from "@pankod/refine-core";
 import { Typography, Select } from "@pankod/refine-antd";
 import { useState } from "react";
@@ -43,6 +43,9 @@ export const OccupySeat: React.FC<
     occupied: false,
   });
 
+  const [occupiedColor,setOccupiedColor] = useState<boolean|undefined>(undefined);
+
+
   const [open, setOpen] = useState(false);
 
   const showDrawer = () => {
@@ -55,7 +58,6 @@ export const OccupySeat: React.FC<
 
   const [currentCabin, setCurrentCabin] = useState<Icabins>();
   const handleChange = (value: string) => {
-    console.log(`Selected: ${value}`);
     setUserSelect((existingValues) => ({
       // Retain the existing values
       ...existingValues,
@@ -78,17 +80,15 @@ export const OccupySeat: React.FC<
       });
       setCabinOption(localCabinArray);
     }
-    console.log(localCabinArray);
   };
 
   const handleSeatClick = (value: OccupiedSeatType) => {
-    console.log(value, "selected crew");
     showDrawer();
     setSeat(value);
+    
   };
 
   const handleCabinChange = (value: string) => {
-    console.log(`Selected Cabin: ${value}`);
     setUserSelect((existingValues) => ({
       // Retain the existing values
       ...existingValues,
@@ -97,9 +97,17 @@ export const OccupySeat: React.FC<
     }));
     const selectedCabin = cabinData?.find((c) => c.depid === value);
     setCurrentCabin(selectedCabin);
-    console.log(selectedCabin);
     // setSeat("somthing");
   };
+
+
+  const enterArea=(value: OccupiedSeatType)=>{
+      console.log(value.occupied,"value occupied color")
+      setOccupiedColor(value.occupied);
+  }
+
+  const color = occupiedColor ? "#626262" : "#EF5366"
+
 
   return (
     <div>
@@ -111,13 +119,16 @@ export const OccupySeat: React.FC<
           gap: "1em",
         }}
       >
+        <h3>Select Floor</h3>
         <Select
           defaultValue="All"
           onChange={handleChange}
           style={{ width: 200 }}
           options={floorOptions}
         />
-
+        <br/>
+        <h3>Select Department</h3>
+        
         <Select
           showSearch
           style={{ width: 200 }}
@@ -145,23 +156,26 @@ export const OccupySeat: React.FC<
         <DisplayUser {...seat} />
       </Drawer>
       {!currentCabin && (
-        <div style={{ width: "100%", margin: "24px 0" }}>
+        <div style={{ width: "1200px", margin: "24px 0" }}>
           <Image src={placeholder} />
         </div>
       )}
       {currentCabin && (
-        <div style={{ width: "100%", margin: "24px 0" }}>
+        <div style={{ marginLeft: "25px"}}>
           <ImageMapper
-            fillColor="#f1364c"
-            src={currentCabin?.photo}
-            // width={500}
-            natural
-            strokeColor="transparent"
-            map={currentCabin}
+            width={1200}
             onClick={(area) => handleSeatClick(area)}
+            onMouseEnter={(area) => enterArea(area)}
+            fillColor={color}
+            src={currentCabin?.photo}
+            strokeColor="#EF5366"
+            map={currentCabin}
+            lineWidth={4}
           />
         </div>
       )}
     </div>
   );
-};
+}
+
+

@@ -11,9 +11,10 @@ export interface Icabins {
             shape: string;
             coords: [];
             preFillColor: string;
-            fillColor: string;
+            fillColor:string|undefined;
             userName: string;
             emp_id: number;
+            occupied:boolean;
         }
     ];
 }
