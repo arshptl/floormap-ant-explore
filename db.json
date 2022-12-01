@@ -88,7 +88,7 @@
     {
       "id": 1,
       "occupied": true,
-      "name": "1",
+      "name": "TESTINGG",
       "shape": "poly",
       "coords": [
         335,
@@ -101,8 +101,8 @@
         265
       ],
       "preFillColor": "#EF5366",
-      "userName": "sagar khatri",
-      "emp_id": "2190"
+      "userName": "Testing mutation",
+      "emp_id": "123456"
     },
     {
       "id": 2,
@@ -125,8 +125,8 @@
     },
     {
       "id": 3,
-      "occupied": false,
-      "name": "",
+      "occupied": true,
+      "name": "TESTINGG",
       "shape": "poly",
       "coords": [
         335,
@@ -138,9 +138,9 @@
         335,
         355
       ],
-      "preFillColor": "",
-      "userName": "",
-      "emp_id": ""
+      "preFillColor": "#EF5366",
+      "userName": "Testing mutation",
+      "emp_id": "123456"
     },
     {
       "id": 4,
