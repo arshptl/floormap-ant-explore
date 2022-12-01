@@ -25,10 +25,7 @@
           "uid": "dd9ecd0a-5a96-4e16-b047-43dca8f43556"
         }
       ],
-      "tags": [
-        8,
-        2
-      ],
+      "tags": [8, 2],
       "language": 1
     },
     {
@@ -56,10 +53,7 @@
           "uid": "40d3fa60-ccf1-4653-9d8c-aaf0e47bf923"
         }
       ],
-      "tags": [
-        1,
-        8
-      ],
+      "tags": [1, 8],
       "language": 1
     }
   ],
@@ -75,6 +69,7 @@
       "error": "migrated database"
     }
   ],
+
   "it": [
     {
       "id": 1,
@@ -90,40 +85,23 @@
       "occupied": true,
       "name": "1",
       "shape": "poly",
-      "coords": [
-        335,
-        240,
-        360,
-        240,
-        360,
-        265,
-        335,
-        265
-      ],
+      "coords": [335, 240, 360, 240, 360, 265, 335, 265],
       "preFillColor": "#EF5366",
       "userName": "sagar khatri",
       "emp_id": "2190"
     },
     {
       "id": 2,
-      "occupied": true,
-      "name": "TESTINGG",
+      "occupied": false,
+      "name": "2",
       "shape": "poly",
-      "coords": [
-        335,
-        285,
-        360,
-        285,
-        360,
-        310,
-        335,
-        310
-      ],
-      "preFillColor": "#EF5366",
-      "userName": "Testing mutation",
-      "emp_id": "123456"
+      "coords": [335, 285, 360, 285, 360, 310, 335, 310],
+      "preFillColor": "#FFECEE",
+      "userName": "",
+      "emp_id": ""
     }
   ],
+
   "node": [
     {
       "id": 1,
@@ -139,16 +117,7 @@
       "occupied": true,
       "name": "1",
       "shape": "poly",
-      "coords": [
-        219,
-        118,
-        220,
-        210,
-        283,
-        210,
-        284,
-        119
-      ],
+      "coords": [219, 118, 220, 210, 283, 210, 284, 119],
       "preFillColor": "#EF5366",
       "userName": "hemil rajpura",
       "emp_id": "2186"
@@ -158,21 +127,13 @@
       "occupied": true,
       "name": "2",
       "shape": "poly",
-      "coords": [
-        381,
-        241,
-        383,
-        94,
-        462,
-        53,
-        457,
-        282
-      ],
+      "coords": [381, 241, 383, 94, 462, 53, 457, 282],
       "preFillColor": "#EF5366",
       "userName": "akash chauhan",
       "emp_id": "2186"
     }
   ],
+
   "mobile": [
     {
       "id": 1,
@@ -188,21 +149,13 @@
       "occupied": true,
       "name": "1",
       "shape": "poly",
-      "coords": [
-        219,
-        118,
-        220,
-        210,
-        283,
-        210,
-        284,
-        119
-      ],
+      "coords": [219, 118, 220, 210, 283, 210, 284, 119],
       "preFillColor": "#EF5366",
       "userName": "Smit t",
       "emp_id": "2121"
     }
   ],
+
   "java": [
     {
       "id": 1,
@@ -212,27 +165,20 @@
       "photo": "https://images.unsplash.com/photo-1437143618958-b630ca68622f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1332&q=80"
     }
   ],
+
   "javacords": [
     {
       "id": 1,
       "occupied": true,
       "name": "1",
       "shape": "poly",
-      "coords": [
-        219,
-        118,
-        220,
-        210,
-        283,
-        210,
-        284,
-        119
-      ],
+      "coords": [219, 118, 220, 210, 283, 210, 284, 119],
       "preFillColor": "#EF5366",
       "userName": "harsh p",
       "emp_id": "2198"
     }
   ],
+
   "react": [
     {
       "id": 1,
@@ -248,16 +194,7 @@
       "occupied": true,
       "name": "1",
       "shape": "poly",
-      "coords": [
-        82,
-        323,
-        98,
-        323,
-        97,
-        337,
-        82,
-        338
-      ],
+      "coords": [82, 323, 98, 323, 97, 337, 82, 338],
       "preFillColor": "#EF5366",
       "userName": "harsh p",
       "emp_id": "2198"
@@ -267,16 +204,7 @@
       "occupied": true,
       "name": "TESTINGG",
       "shape": "poly",
-      "coords": [
-        219,
-        118,
-        220,
-        210,
-        283,
-        210,
-        284,
-        119
-      ],
+      "coords": [219, 118, 220, 210, 283, 210, 284, 119],
       "preFillColor": "#EF5366",
       "userName": "Testing mutation",
       "emp_id": "123456"

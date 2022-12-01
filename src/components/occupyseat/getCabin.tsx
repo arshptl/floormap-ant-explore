@@ -5,6 +5,7 @@ import ImageMapper from "react-img-mapper";
 import { Drawer } from "antd";
 import DisplayUser from "./displayUser";
 import placeholder from "../../../assets/placeholder.jpg";
+import styles from "../../styles/occupyseat.module.css";
 
 // Interfaces
 interface propsTypes {
@@ -52,6 +53,7 @@ const GetCabin = (props: propsTypes) => {
 
   // States
   const [open, setOpen] = useState(false);
+  const [hoveredArea, setHoverArea] = useState(null);
   const [seat, setSeat] = useState<OccupiedSeatType>({
     id: 0,
     name: "",
@@ -81,6 +83,19 @@ const GetCabin = (props: propsTypes) => {
     setSeat(value);
   };
 
+  const enterArea = (area: any) => {
+    setHoverArea(area);
+  };
+
+  const leaveArea = () => {
+    setHoverArea(null);
+  };
+
+  const getTipPosition = (area: any) => {
+    console.log("gettopposition", area);
+    return { top: `${area.center[0]}px`, left: `${area.center[0]}px` };
+  };
+
   const handleButtonClick = (obj: any) => {
     console.log("in handle buttonClick", obj, seat.id);
 
@@ -93,7 +108,7 @@ const GetCabin = (props: propsTypes) => {
       },
       {
         onSuccess: (data, variables, context) => {
-          // Let's celebrate!
+          // Closing the drawer after successful mutation
           onClose();
         },
       }
@@ -114,8 +129,31 @@ const GetCabin = (props: propsTypes) => {
           src={cabinData?.data?.data?.photo}
           strokeColor="#EF5366"
           map={imgMapperCoords}
+          onMouseEnter={(area) => enterArea(area)}
+          onMouseLeave={(area) => leaveArea(area)}
           lineWidth={4}
         />
+      )}
+      {hoveredArea && (
+        <span
+          className={styles.tooltip}
+          style={{ ...getTipPosition(hoveredArea) }}
+        >
+          {hoveredArea && (
+            <div>
+              <div>
+                Seat Number: <b>{hoveredArea.name}</b>
+              </div>
+              {hoveredArea.occupied ? (
+                <div>
+                  Occupied by: <b>{hoveredArea.userName}</b>
+                </div>
+              ) : (
+                <div>Not Occupied</div>
+              )}
+            </div>
+          )}
+        </span>
       )}
       <Drawer
         title="Seat Description"
