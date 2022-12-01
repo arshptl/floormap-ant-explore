@@ -2,8 +2,13 @@ import React from "react";
 import { OccupiedSeatType } from "../../utils/interfaces";
 import { Button, Card } from "@pankod/refine-antd";
 
-const DisplayUser = (props: OccupiedSeatType): JSX.Element => {
-  console.log(props.occupied);
+interface propsTypes {
+  seat: OccupiedSeatType;
+  mutateSeat: any;
+}
+
+const DisplayUser = (props: propsTypes): JSX.Element => {
+  console.log(props.seat.occupied);
   return (
     <div>
       <Card
@@ -11,32 +16,50 @@ const DisplayUser = (props: OccupiedSeatType): JSX.Element => {
           width: "100%",
           backgroundColor: "var(--primary-light)",
           color: "var(--primary)",
-          margin: "0.5rem 0"
+          margin: "0.5rem 0",
         }}
       >
-        Seat Number: {props.name}
+        Seat Number: {props.seat.name}
       </Card>
       <Card
         style={{
           width: "100%",
           backgroundColor: "var(--primary-light)",
           color: "var(--primary)",
-          margin: "0.5rem 0"
+          margin: "0.5rem 0",
         }}
       >
-        Seat Owner: {props.userName}
+        Seat Owner: {props.seat.userName}
       </Card>
       <Card
         style={{
           width: "100%",
           backgroundColor: "var(--primary-light)",
           color: "var(--primary)",
-          margin: "0.5rem 0"
+          margin: "0.5rem 0",
         }}
       >
-        Onwer Employee Code: {props.emp_id}
+        Onwer Employee Code: {props.seat.emp_id}
       </Card>
-      {!props.occupied ? <Button title="Occupy Seat" type="primary">Occupy Seat</Button>: <h3>Seat already Occupied</h3>}
+      {!props.seat.occupied ? (
+        <Button
+          title="Occupy Seat"
+          type="primary"
+          onClick={() =>
+            props.mutateSeat({
+              occupied: true,
+              name: "TESTINGG",
+              userName: "Testing mutation",
+              emp_id: "123456",
+              preFillColor: "#EF5366",
+            })
+          }
+        >
+          Occupy Seat
+        </Button>
+      ) : (
+        <h3>Seat already Occupied</h3>
+      )}
       {/* <Card >
             </Card> */}
     </div>
