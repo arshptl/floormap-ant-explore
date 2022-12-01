@@ -68,7 +68,9 @@ export const Sider: typeof DefaultSider = ({ render }) => {
       const isRoute = !(parentName !== undefined && children.length === 0);
       console.log(selectedKey)
 
-     const icons= selectedKey==='/occupyseat'?<DesktopOutlined/>:<ArrowRightOutlined/>
+    //  const icons= selectedKey==='/occupyseat'?<DesktopOutlined/>:<ArrowRightOutlined/>
+
+    const icons = <ArrowRightOutlined/>
       return (
         <CanAccess
           key={route}
