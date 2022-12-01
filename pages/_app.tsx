@@ -20,15 +20,12 @@ import {
 } from "@components/layout";
 import { PostList, PostCreate, PostEdit, PostShow } from "@components/posts";
 
-
-
 // import UserShow  from "../src/components/users/show";
-import {UserShow, UserList} from "@components/users";
-import { OccupySeat,CreateSeat } from "@components/occupyseat";
+import { UserShow, UserList } from "@components/users";
+import { OccupySeat, CreateSeat } from "@components/occupyseat";
 
 // const API_URL = "https://api.fake-rest.refine.dev";
-const API_URL = "http://localhost:3000";
-
+const API_URL = "http://localhost:3002";
 
 function MyApp({ Component, pageProps }: AppProps): JSX.Element {
   return (
@@ -66,8 +63,6 @@ function MyApp({ Component, pageProps }: AppProps): JSX.Element {
     >
       <Component {...pageProps} />
     </Refine>
-
-
   );
 }
 

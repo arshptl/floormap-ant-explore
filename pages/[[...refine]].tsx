@@ -6,16 +6,14 @@ import {
 
 import dataProvider from "@pankod/refine-simple-rest";
 // const API_URL = "https://api.fake-rest.refine.dev";
-const API_URL = "http://localhost:3000";
-
+const API_URL = "http://localhost:3002";
 
 export const getServerSideProps: GetServerSideProps = async (context) => {
   const { resource, action, id } = handleRefineParams(context.params?.refine);
   // console.log(resource, action, id);
   // console.log(resource.slice(resource.lastIndexOf("/") + 1));
   // console.log(resource.lastIndexOf("/"));
-  
-  
+
   try {
     if (resource && action === "show" && id) {
       const data = await dataProvider(API_URL).getOne({
@@ -24,7 +22,6 @@ export const getServerSideProps: GetServerSideProps = async (context) => {
       });
 
       console.log("data if action", data);
-
 
       return {
         props: {
