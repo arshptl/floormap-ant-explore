@@ -11,10 +11,10 @@ export interface Icabins {
             shape: string;
             coords: [];
             preFillColor: string;
-            fillColor:string|undefined;
+            fillColor: string | undefined;
             userName: string;
             emp_id: number;
-            occupied:boolean;
+            occupied: boolean;
         }
     ];
 }
@@ -25,12 +25,13 @@ export interface Cabintype {
 }
 
 export interface OccupiedSeatType {
-  name: string;
-  shape: string;
-  coords: Array<number>;
-  preFillColor: string;
-  fillColor: string;
-  userName: string;
-  emp_id: string;
-  occupied: boolean;
+    id: number,
+    name: string;
+    shape: string;
+    coords: Array<number>;
+    preFillColor: string;
+    fillColor: string;
+    userName: string;
+    emp_id: string;
+    occupied: boolean;
 }

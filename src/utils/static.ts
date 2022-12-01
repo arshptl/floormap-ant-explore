@@ -1,4 +1,5 @@
 import type { SelectProps } from "antd";
+import { Cabintype } from "./interfaces";
 
 export const floorWithCabinMap = [
     {
@@ -30,6 +31,7 @@ export const floorWithCabinMap = [
     {
         floor: "6",
         cabins: [
+
             {
                 label: "Java",
                 value: "java",
@@ -41,6 +43,33 @@ export const floorWithCabinMap = [
         ],
     },
 ];
+
+export const allCabins: Cabintype[] = [
+    {
+        label: "React",
+        value: "react",
+    },
+    {
+        label: "Mobile",
+        value: "mobile",
+    },
+    {
+        label: "Node",
+        value: "node",
+    },
+    {
+        label: "Java",
+        value: "java",
+    },
+    {
+        label: "Sales",
+        value: "sales",
+    },
+    {
+        label: "IT",
+        value: "it",
+    },
+]
 
 export const floorOptions: SelectProps["options"] = [
     {
