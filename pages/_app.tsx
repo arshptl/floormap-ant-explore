@@ -25,7 +25,7 @@ import { UserShow, UserList } from "@components/users";
 import { OccupySeat, CreateSeat } from "@components/occupyseat";
 
 // const API_URL = "https://api.fake-rest.refine.dev";
-const API_URL = "http://localhost:3002";
+const API_URL = "http://localhost:3000";
 
 function MyApp({ Component, pageProps }: AppProps): JSX.Element {
   return (
@@ -43,7 +43,7 @@ function MyApp({ Component, pageProps }: AppProps): JSX.Element {
       OffLayoutArea={OffLayoutArea}
       resources={[
         {
-          name: "posts",
+          name: "users",
           list: PostList,
           create: PostCreate,
           edit: PostEdit,

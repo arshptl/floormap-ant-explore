@@ -125,7 +125,7 @@ const GetCabin = (props: propsTypes) => {
           width={1200}
           onClick={(area) => handleSeatClick(area)}
           // onMouseEnter={(area) => enterArea(area)}
-          fillColor={"#d10a21"}
+          fillColor={"#AE5661"}
           src={cabinData?.data?.data?.photo}
           strokeColor="#EF5366"
           map={imgMapperCoords}

@@ -6,7 +6,7 @@ import {
 
 import dataProvider from "@pankod/refine-simple-rest";
 // const API_URL = "https://api.fake-rest.refine.dev";
-const API_URL = "http://localhost:3002";
+const API_URL = "http://localhost:3000";
 
 export const getServerSideProps: GetServerSideProps = async (context) => {
   const { resource, action, id } = handleRefineParams(context.params?.refine);

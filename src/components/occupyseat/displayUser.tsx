@@ -11,7 +11,30 @@ const DisplayUser = (props: propsTypes): JSX.Element => {
   console.log(props.seat.occupied);
   return (
     <div>
-      <Card
+      
+      {!props.seat.occupied ? (
+        <>
+        <h2>Occupy your Seat</h2>
+         <Button
+          title="Occupy Seat"
+          type="primary"
+          onClick={() =>
+            props.mutateSeat({
+              occupied: true,
+              name: "TESTINGG",
+              userName: "Testing mutation",
+              emp_id: "123456",
+              preFillColor: "#EF5366",
+            })
+          }
+        >
+          Occupy Seat
+        </Button>
+        </>
+       
+      ) : (
+        <>
+        <Card
         style={{
           width: "100%",
           backgroundColor: "var(--primary-light)",
@@ -41,24 +64,24 @@ const DisplayUser = (props: propsTypes): JSX.Element => {
       >
         Onwer Employee Code: {props.seat.emp_id}
       </Card>
-      {!props.seat.occupied ? (
-        <Button
-          title="Occupy Seat"
+        <h3>Seat already Occupied</h3>
+        <Button 
+          title="Cancel Seat"
           type="primary"
-          onClick={() =>
+          onClick={()=>
             props.mutateSeat({
-              occupied: true,
-              name: "TESTINGG",
-              userName: "Testing mutation",
-              emp_id: "123456",
-              preFillColor: "#EF5366",
+              occupied: false,
+              name: "",
+              userName: "",
+              emp_id: "",
+              preFillColor: "",
             })
           }
         >
-          Occupy Seat
+          Cancel Seat
         </Button>
-      ) : (
-        <h3>Seat already Occupied</h3>
+        </>
+        
       )}
       {/* <Card >
             </Card> */}
