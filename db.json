@@ -25,7 +25,10 @@
           "uid": "dd9ecd0a-5a96-4e16-b047-43dca8f43556"
         }
       ],
-      "tags": [8, 2],
+      "tags": [
+        8,
+        2
+      ],
       "language": 1
     },
     {
@@ -53,7 +56,10 @@
           "uid": "40d3fa60-ccf1-4653-9d8c-aaf0e47bf923"
         }
       ],
-      "tags": [1, 8],
+      "tags": [
+        1,
+        8
+      ],
       "language": 1
     }
   ],
@@ -63,115 +69,217 @@
       "firstName": "Luciano"
     }
   ],
-
   "occupyseat": [
+    {
+      "id": 1,
+      "error": "migrated database"
+    }
+  ],
+  "it": [
     {
       "id": 1,
       "floor": 4,
       "name": "IT Department",
       "depid": "it",
-      "photo": "https://i.ibb.co/gm0MC2F/4th-floor-cabin-1-5.png",
-      "areas": [
-        {
-          "occupied": true,
-          "name": "1",
-          "shape": "poly",
-          "coords": [335,240,360,240,360,265,335,265],
-          "preFillColor": "#FFE7EA",
-          "userName": "sagar khatri",
-          "emp_id": "2190"
-        },
-        {
-          "occupied": false,
-          "name": "2",
-          "shape": "poly",
-          "coords": [335,285,360,285,360,310,335,310],
-          "preFillColor": "#FFE7EA",
-          "userName": "akash chauhan",
-          "emp_id": "2186"
-        }
-      ]
+      "photo": "https://i.ibb.co/gm0MC2F/4th-floor-cabin-1-5.png"
+    }
+  ],
+  "itcords": [
+    {
+      "id": 1,
+      "occupied": true,
+      "name": "1",
+      "shape": "poly",
+      "coords": [
+        335,
+        240,
+        360,
+        240,
+        360,
+        265,
+        335,
+        265
+      ],
+      "preFillColor": "#EF5366",
+      "userName": "sagar khatri",
+      "emp_id": "2190"
     },
     {
       "id": 2,
+      "occupied": true,
+      "name": "TESTINGG",
+      "shape": "poly",
+      "coords": [
+        335,
+        285,
+        360,
+        285,
+        360,
+        310,
+        335,
+        310
+      ],
+      "preFillColor": "#EF5366",
+      "userName": "Testing mutation",
+      "emp_id": "123456"
+    }
+  ],
+  "node": [
+    {
+      "id": 1,
       "floor": 5,
       "depid": "node",
       "name": "Node",
-      "photo": "https://images.unsplash.com/2/10.jpg?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80",
-      "areas": [
-        {
-          "occupied": true,
-          "name": "1",
-          "shape": "poly",
-          "coords": [219, 118, 220, 210, 283, 210, 284, 119],
-          "preFillColor": "#EF5366",
-          "userName": "hemil rajpura",
-          "emp_id": "2186"
-        },
-        {
-          "occupied": true,
-          "name": "2",
-          "shape": "poly",
-          "coords": [381, 241, 383, 94, 462, 53, 457, 282],
-          "preFillColor": "#EF5366",
-          "userName": "akash chauhan",
-          "emp_id": "2186"
-        }
-      ]
+      "photo": "https://images.unsplash.com/2/10.jpg?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
+    }
+  ],
+  "nodecords": [
+    {
+      "id": 1,
+      "occupied": true,
+      "name": "1",
+      "shape": "poly",
+      "coords": [
+        219,
+        118,
+        220,
+        210,
+        283,
+        210,
+        284,
+        119
+      ],
+      "preFillColor": "#EF5366",
+      "userName": "hemil rajpura",
+      "emp_id": "2186"
     },
     {
-      "id": 3,
+      "id": 2,
+      "occupied": true,
+      "name": "2",
+      "shape": "poly",
+      "coords": [
+        381,
+        241,
+        383,
+        94,
+        462,
+        53,
+        457,
+        282
+      ],
+      "preFillColor": "#EF5366",
+      "userName": "akash chauhan",
+      "emp_id": "2186"
+    }
+  ],
+  "mobile": [
+    {
+      "id": 1,
       "floor": 5,
       "depid": "mobile",
       "name": "Mobile",
-      "photo": "https://images.unsplash.com/photo-1516655855035-d5215bcb5604?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1yZWxhdGVkfDR8fHxlbnwwfHx8fA%3D%3D&auto=format&fit=crop&w=500&q=60",
-      "areas": [
-        {
-          "occupied": true,
-          "name": "1",
-          "shape": "poly",
-          "coords": [219, 118, 220, 210, 283, 210, 284, 119],
-          "preFillColor": "#EF5366",
-          "userName": "Smit t",
-          "emp_id": "2121"
-        }
-      ]
-    },
+      "photo": "https://images.unsplash.com/photo-1516655855035-d5215bcb5604?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1yZWxhdGVkfDR8fHxlbnwwfHx8fA%3D%3D&auto=format&fit=crop&w=500&q=60"
+    }
+  ],
+  "mobilecords": [
     {
-      "id": 4,
+      "id": 1,
+      "occupied": true,
+      "name": "1",
+      "shape": "poly",
+      "coords": [
+        219,
+        118,
+        220,
+        210,
+        283,
+        210,
+        284,
+        119
+      ],
+      "preFillColor": "#EF5366",
+      "userName": "Smit t",
+      "emp_id": "2121"
+    }
+  ],
+  "java": [
+    {
+      "id": 1,
       "floor": 6,
       "depid": "java",
       "name": "Java",
-      "photo": "https://images.unsplash.com/photo-1437143618958-b630ca68622f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1332&q=80",
-      "areas": [
-        {
-          "occupied": true,
-          "name": "1",
-          "shape": "poly",
-          "coords": [219, 118, 220, 210, 283, 210, 284, 119],
-          "preFillColor": "#EF5366",
-          "userName": "harsh p",
-          "emp_id": "2198"
-        }
-      ]
-    },
+      "photo": "https://images.unsplash.com/photo-1437143618958-b630ca68622f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1332&q=80"
+    }
+  ],
+  "javacords": [
     {
-      "id": 4,
+      "id": 1,
+      "occupied": true,
+      "name": "1",
+      "shape": "poly",
+      "coords": [
+        219,
+        118,
+        220,
+        210,
+        283,
+        210,
+        284,
+        119
+      ],
+      "preFillColor": "#EF5366",
+      "userName": "harsh p",
+      "emp_id": "2198"
+    }
+  ],
+  "react": [
+    {
+      "id": 1,
       "floor": 6,
       "depid": "react",
       "name": "React",
-      "photo": "https://images.edrawmax.com/examples/office-layout-examples/office-layout-example-3.jpg",
-      "areas": [
-        {
-          "occupied": true,
-          "name": "1",
-          "shape": "poly",
-          "coords": [82, 323, 98, 323, 97, 337, 82, 338],
-          "preFillColor": "#EF5366",
-          "userName": "harsh p",
-          "emp_id": "2198"
-        }
-      ]
+      "photo": "https://images.edrawmax.com/examples/office-layout-examples/office-layout-example-3.jpg"
+    }
+  ],
+  "reactcords": [
+    {
+      "id": 1,
+      "occupied": true,
+      "name": "1",
+      "shape": "poly",
+      "coords": [
+        82,
+        323,
+        98,
+        323,
+        97,
+        337,
+        82,
+        338
+      ],
+      "preFillColor": "#EF5366",
+      "userName": "harsh p",
+      "emp_id": "2198"
+    },
+    {
+      "id": 2,
+      "occupied": true,
+      "name": "TESTINGG",
+      "shape": "poly",
+      "coords": [
+        219,
+        118,
+        220,
+        210,
+        283,
+        210,
+        284,
+        119
+      ],
+      "preFillColor": "#EF5366",
+      "userName": "Testing mutation",
+      "emp_id": "123456"
     }
   ]
 }
