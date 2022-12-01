@@ -15,7 +15,7 @@ export const UserList: React.FC<
         {initialData?.data.map((da) => {
           return (
             <li>
-              <p>{da.firstName}</p>
+              <p>{da.firstName}</p> 
             </li>
           )
         })}

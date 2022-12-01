@@ -116,13 +116,18 @@ const GetCabin = (props: propsTypes) => {
   };
 
   return (
-    <div style={{ marginLeft: "25px" }}>
+    <div>
+      {/* <div style={{ width: "1500px", backgroundColor: "red", height: "780px" }}>
+        Hello
+      </div> */}
       {imgMapperCoords.areas && (
+        <div style={{margin: "1em 0"}}>
         <ImageMapper
           onLoad={(imgMapperCoords) => {
             imgMapperCoords;
           }}
-          width={1200}
+          // width={1500}
+          // height={750}
           onClick={(area) => handleSeatClick(area)}
           // onMouseEnter={(area) => enterArea(area)}
           fillColor={"#AE5661"}
@@ -133,6 +138,7 @@ const GetCabin = (props: propsTypes) => {
           onMouseLeave={(area) => leaveArea(area)}
           lineWidth={4}
         />
+        </div>
       )}
       {hoveredArea && (
         <span
@@ -158,6 +164,7 @@ const GetCabin = (props: propsTypes) => {
       <Drawer
         title="Seat Description"
         placement="right"
+        
         onClose={onClose}
         visible={open}
       >

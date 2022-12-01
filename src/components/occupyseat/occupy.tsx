@@ -83,7 +83,7 @@ export const OccupySeat: React.FC<
       </div>
       {userSelect.cabin !== "" && <GetCabin {...userSelect} />}
       {userSelect.cabin === "" && (
-        <div style={{ width: "1200px", margin: "24px 0" }}>
+        <div style={{ margin: "24px 0", width: "1500px" }}>
           <Image src={placeholder} />
         </div>
       )}
