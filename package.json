@@ -3,10 +3,11 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "cross-env NODE_OPTIONS=--max_old_space_size=4096 next dev",
+    "dev": "cross-env NODE_OPTIONS=--max_old_space_size=4096 next dev --port 4000",
     "build": "next build",
     "start": "next start",
-    "lint": "eslint '**/*.{js,jsx,ts,tsx}'"
+    "lint": "eslint '**/*.{js,jsx,ts,tsx}'",
+    "serve": "json-server --watch db.json --port 3000"
   },
   "dependencies": {
     "@pankod/refine-antd": "^3.18.0",
