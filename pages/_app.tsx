@@ -43,22 +43,26 @@ function MyApp({ Component, pageProps }: AppProps): JSX.Element {
       OffLayoutArea={OffLayoutArea}
       resources={[
         {
-          name: "users List",
+          name: "occupyseat",
+          list: OccupySeat,
+          create: CreateSeat,
+        },
+        {
+          name: "users",
+        },
+        {
+          name: "usersList",
           list: PostList,
           create: PostCreate,
           edit: PostEdit,
           show: PostShow,
         },
         {
-          name: "User Profile",
+          name: "UserProfile",
           list: UserList,
           show: UserShow,
         },
-        {
-          name: "occupy seat",
-          list: OccupySeat,
-          create: CreateSeat,
-        },
+        
       ]}
     >
       <Component {...pageProps} />

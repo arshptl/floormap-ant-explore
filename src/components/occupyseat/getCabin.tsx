@@ -1,10 +1,9 @@
 import React, { useState } from "react";
 import { useList, useOne, useUpdate } from "@pankod/refine-core";
-import { Icabins, OccupiedSeatType } from "src/utils/interfaces";
+import { OccupiedSeatType } from "src/utils/interfaces";
 import ImageMapper from "react-img-mapper";
 import { Drawer } from "antd";
 import DisplayUser from "./displayUser";
-import placeholder from "../../../assets/placeholder.jpg";
 import styles from "../../styles/occupyseat.module.css";
 
 // Interfaces

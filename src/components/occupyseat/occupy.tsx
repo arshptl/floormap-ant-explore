@@ -8,6 +8,7 @@ import { allCabins, floorWithCabinMap, floorOptions } from "../../utils/static";
 const { Title } = Typography;
 import Image from "next/image";
 import GetCabin from "./getCabin";
+import Link from "next/link";
 
 export const OccupySeat: React.FC<
   IResourceComponentsProps<GetListResponse<Icabins>>
@@ -44,6 +45,9 @@ export const OccupySeat: React.FC<
   return (
     <div>
       <Title>Occupy seat</Title>
+      <Link href="/users">
+        Go to users
+      </Link>
       <div
         style={{
           display: "flex",
