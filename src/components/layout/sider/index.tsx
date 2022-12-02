@@ -1,8 +1,6 @@
 import React, { useState } from "react";
 import {
-  AntdLayout,
   Menu,
-  Grid,
   Icons,
   Sider as DefaultSider,
 } from "@pankod/refine-antd";
@@ -20,11 +18,10 @@ import {
 
 import { Title as DefaultTitle } from "../title";
 
-import { antLayoutSider, antLayoutSiderMobile } from "./styles";
-const { UnorderedListOutlined, LogoutOutlined ,ArrowRightOutlined,DesktopOutlined} = Icons;
+const { UserOutlined, LogoutOutlined } = Icons;
 const { SubMenu } = Menu;
 
-export const Sider: typeof DefaultSider = ({ render }) => {
+export const CustomSider: typeof DefaultSider = ({ render }) => {
   const [collapsed, setCollapsed] = useState<boolean>(false);
   const isExistAuthentication = useIsExistAuthentication();
   const { Link } = useRouterContext();
@@ -32,16 +29,12 @@ export const Sider: typeof DefaultSider = ({ render }) => {
   const Title = useTitle();
   const translate = useTranslate();
   const { menuItems, selectedKey, defaultOpenKeys } = useMenu();
-  const breakpoint = Grid.useBreakpoint();
   const { hasDashboard } = useRefineContext();
-
-  const isMobile =
-    typeof breakpoint.lg === "undefined" ? false : !breakpoint.lg;
 
   const RenderToTitle = Title ?? DefaultTitle;
 
-  const renderTreeView = (tree: ITreeMenu[], selectedKey: string) => {
-    return tree.map((item: ITreeMenu) => {
+  const renderView = (menuItems: ITreeMenu[], selectedKey: string) => {
+    return menuItems.map((item: ITreeMenu) => {
       const { icon, label, route, name, children, parentName } = item;
 
       if (children.length > 0) {
@@ -56,21 +49,16 @@ export const Sider: typeof DefaultSider = ({ render }) => {
           >
             <SubMenu
               key={route}
-              icon={icon ?? <UnorderedListOutlined />}
+              icon={icon ?? <UserOutlined />}
               title={label}
             >
-              {renderTreeView(children, selectedKey)}
+              {renderView(children, selectedKey)}
             </SubMenu>
           </CanAccess>
         );
       }
       const isSelected = route === selectedKey;
       const isRoute = !(parentName !== undefined && children.length === 0);
-      console.log(selectedKey)
-
-    //  const icons= selectedKey==='/occupyseat'?<DesktopOutlined/>:<ArrowRightOutlined/>
-
-    const icons = <ArrowRightOutlined/>
       return (
         <CanAccess
           key={route}
@@ -85,12 +73,9 @@ export const Sider: typeof DefaultSider = ({ render }) => {
             style={{
               fontWeight: isSelected ? "bold" : "normal",
             }}
-    icon={icons}  
+            icon={icon ?? (isRoute && <UserOutlined />)}
           >
             <Link to={route}>{label}</Link>
-            {!collapsed && isSelected && (
-              <div className="ant-menu-tree-arrow" />
-            )}
           </Menu.Item>
         </CanAccess>
       );
@@ -115,13 +100,10 @@ export const Sider: typeof DefaultSider = ({ render }) => {
       icon={<Icons.DashboardOutlined />}
     >
       <Link href="/">{translate("dashboard.title", "Dashboard")}</Link>
-      {!collapsed && selectedKey === "/" && (
-        <div className="ant-menu-tree-arrow" />
-      )}
     </Menu.Item>
   );
 
-  const items = renderTreeView(menuItems, selectedKey);
+  const items = renderView(menuItems, selectedKey);
 
   const renderSider = () => {
     if (render) {
@@ -142,27 +124,15 @@ export const Sider: typeof DefaultSider = ({ render }) => {
   };
 
   return (
-    <AntdLayout.Sider
-      collapsible
-      collapsed={collapsed}
-      onCollapse={(collapsed: boolean): void => setCollapsed(collapsed)}
-      collapsedWidth={isMobile ? 0 : 80}
-      breakpoint="lg"
-      style={isMobile ? antLayoutSiderMobile : antLayoutSider}
-    >
-      <RenderToTitle collapsed={collapsed} />
-      <Menu
-        selectedKeys={[selectedKey]}
-        defaultOpenKeys={defaultOpenKeys}
-        mode="inline"
-        onClick={() => {
-          if (!breakpoint.lg) {
-            setCollapsed(true);
-          }
-        }}
-      >
-        {renderSider()}
-      </Menu>
-    </AntdLayout.Sider>
+      <>
+        <RenderToTitle collapsed={false} />
+        <Menu
+          selectedKeys={[selectedKey]}
+          defaultOpenKeys={defaultOpenKeys}
+          mode="horizontal"
+        >
+          {renderSider()}
+        </Menu>
+      </>
   );
 };

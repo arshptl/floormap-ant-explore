@@ -13,7 +13,7 @@ require("antd/dist/antd.less");
 import {
   Title,
   Header,
-  Sider,
+  CustomSider,
   Footer,
   Layout,
   OffLayoutArea,
@@ -37,7 +37,7 @@ function MyApp({ Component, pageProps }: AppProps): JSX.Element {
       catchAll={<ErrorComponent />}
       Title={Title}
       Header={Header}
-      Sider={Sider}
+      Sider={CustomSider}
       Footer={Footer}
       Layout={Layout}
       OffLayoutArea={OffLayoutArea}
