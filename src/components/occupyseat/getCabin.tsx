@@ -136,7 +136,7 @@ const GetCabin = (props: propsTypes) => {
           map={imgMapperCoords}
           onMouseEnter={(area) => enterArea(area)}
           onMouseLeave={(area) => leaveArea(area)}
-          lineWidth={4}
+          lineWidth={0}
         />
         </div>
       )}
@@ -148,7 +148,7 @@ const GetCabin = (props: propsTypes) => {
           {hoveredArea && (
             <div>
               <div>
-                Seat Number: <b>{hoveredArea.name}</b>
+                Seat Number: <b>{hoveredArea.id}</b>
               </div>
               {hoveredArea.occupied ? (
                 <div>
