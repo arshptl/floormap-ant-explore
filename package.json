@@ -12,6 +12,7 @@
   "dependencies": {
     "@pankod/refine-antd": "^3.18.0",
     "@pankod/refine-core": "^3.18.0",
+    "@pankod/refine-graphql": "^4.11.0",
     "@pankod/refine-nextjs-router": "^3.18.0",
     "@pankod/refine-simple-rest": "^3.18.0",
     "json-server": "^0.17.1",
